@@ -1,31 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {NavbarSection,Logo,LogoText,UlList,ListItem,Anchor} from './style.js';
+
+
 
 
 const Navbar = () => {
     return (
         
-            <div className="navbar">
+            <NavbarSection>
                 <div className="container">
-                    <div className="logo">
-                        <h2 className="logo-text">Ultra Profile</h2>
-                    </div>
+                    <Logo>
+                        <LogoText>Ultra Profile</LogoText>
+                    </Logo>
                    
-                        <ul className="ul-list">
-                            <li className="list-item"><a href="#">Home</a></li>
-                            <li className="list-item"><a href="#">Work</a></li>
-                            <li className="list-item"><a href="#">Portfolio</a></li>
-                            <li className="list-item"><a href="#">Resume</a></li>
-                            <li className="list-item"><a href="#">About</a></li>
-                            <li className="list-item"><a href="#">Contact</a></li>
-                        </ul>
+                        <UlList>
+                            <ListItem><Link to="/">Home</Link></ListItem>
+                            <ListItem><Anchor href="#">Work</Anchor></ListItem>
+                            <ListItem><Anchor href="#">Portfolio</Anchor></ListItem>
+                            <ListItem><Anchor href="#">Resume</Anchor></ListItem>
+                            <ListItem><Anchor href="#">About</Anchor></ListItem>
+                            <ListItem><Link to="/contact">Contact</Link></ListItem>
+                        </UlList>
                     
                 </div>
-            </div>
+            </NavbarSection>
     );
 }
-
-
 
 
 export default Navbar;

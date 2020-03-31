@@ -19,7 +19,7 @@ class Work extends React.Component {
         const { works } = this.state;
         const worksList = works.map((workItem) => {
             return (
-                    <WorkPart key={workItem.id}>
+                    <WorkPart first={workItem.id} key={workItem.id}>
                         <Icon className={workItem.icon_name}></Icon>
                         <PartTitle>{workItem.title}</PartTitle>
                         <Line />

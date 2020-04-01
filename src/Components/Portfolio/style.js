@@ -18,15 +18,15 @@ export const Span = styled.span`
 export const PortfolioList = styled.ul`
     list-style: none;
     text-align: center;
-    margin: 20px 0
+    margin: 20px 0;
 `;
 
 export const PortfolioItem = styled.li`
     display: inline-block;
     width: 100px;
-    padding: 10px
-    background: ${props => props.active ? '#eb5424' : ''}
-    color: ${props => props.active ? '#fff' : '#000'}
+    padding: 10px;
+    background: ${props => props.active ? '#eb5424' : ''};
+    color: ${props => props.active ? '#fff' : '#000'};
     
    
 `;
@@ -41,11 +41,11 @@ export const ImageWrapper = styled.div`
 
     &:hover > div {
         opacity: 1
-    }
+    };
 `;
 
 export const Image = styled.img`
-    width: 100%
+    width: 100%;
 
     
 `;

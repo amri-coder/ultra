@@ -42,24 +42,24 @@ const Profile = () => {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos praesentium blanditiis esse cupiditate, omnis similique.
                     </p>
                     <div className="bar">
-                        <span className="title">Bootstrap</span>
-                        <span className="perc">100%</span>
+                        <span className="title">React</span>
+                        <span className="perc">70%</span>
                         <div className="parent">
                             <span className="sp1"></span>
                         </div>
                     </div>
                     
                     <div className="bar">
-                        <span className="title">CSS3</span>
-                        <span className="perc">90%</span>
+                        <span className="title">JavaScript</span>
+                        <span className="perc">70%</span>
                         <div className="parent">
                             <span className="sp2"></span>
                         </div>
                     </div>
                     
                     <div className="bar">
-                        <span className="title">Photoshop</span>
-                        <span className="perc">80%</span>
+                        <span className="title">PHP</span>
+                        <span className="perc">65%</span>
                         <div className="parent">
                             <span className="sp3"></span>
                         </div>

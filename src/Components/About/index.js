@@ -1,33 +1,29 @@
 import React from 'react';
+import { AboutSection, AboutInfo, InfoTitle, Span, InfoDir , InfoDesc, Anchor} from './style';
 
 
 const About = () => {
     return (
-        <div className="creative">
+        <AboutSection>
             <div className="container">
-                <div className="creative-info">
-                    <h2 className="info-title"><span>C'est</span> Moi</h2>
-                    <h4 className="info-dir">Directeur De Création</h4>
-                    <p className="info-desc">
-                    Je suis développeur web <a href="#">pour plus d'info</a> front & back
-                    </p>
-                    <p className="info-desc">
-                       * Conception et développement d'applications
-                    </p>
-                    <p className="info-desc">
-                       * Intégration et tests
-                    </p>
-                    <p className="info-desc">
-                    * Agile (Scrum/Kanban)
-                    </p>
-                    <p className="info-desc">
-                    * Analyse et interprétation de spécifications techniques et fonctionnelles
-                    </p>
-                    
-                    
-                </div>
+                <AboutInfo>
+                    <InfoTitle><Span>C'est</Span> Moi</InfoTitle>
+                    <InfoDir>Directeur De Création</InfoDir>
+                    <InfoDesc>
+                    Je suis développeur web front & back <Anchor href="#">pour plus d'info</Anchor>
+                    </InfoDesc>
+                    <InfoDesc>
+                    - Conception et développement d'applications
+                    </InfoDesc>
+                    <InfoDesc>
+                    - Intégration et tests / Agile (Scrum/Kanban)
+                    </InfoDesc>
+                    <InfoDesc>
+                    - Analyse et interprétation de spécifications techniques et fonctionnelles
+                    </InfoDesc>
+                </AboutInfo>
             </div>
-        </div>
+        </AboutSection>
     );
 }
 

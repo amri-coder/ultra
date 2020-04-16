@@ -12,15 +12,24 @@ const About = () => {
                     Je suis développeur web <a href="#">pour plus d'info</a> front & back
                     </p>
                     <p className="info-desc">
-                    
+                       * Conception et développement d'applications
                     </p>
+                    <p className="info-desc">
+                       * Intégration et tests
+                    </p>
+                    <p className="info-desc">
+                    * Agile (Scrum/Kanban)
+                    </p>
+                    <p className="info-desc">
+                    * Analyse et interprétation de spécifications techniques et fonctionnelles
+                    </p>
+                    
+                    
                 </div>
             </div>
         </div>
     );
 }
-
-
 
 
 export default About;

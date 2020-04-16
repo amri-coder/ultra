@@ -1,9 +1,9 @@
 import React from 'react';
-
+import { SocialMedia } from "./style";
 
 const SocialMedia = () => {
     return (
-        <div className="social-media">
+        <SocialMedia>
             
                 <div className="social face">
                     <i className="icon fa fa-facebook fa-lg"></i>
@@ -28,7 +28,7 @@ const SocialMedia = () => {
                         <span className="info2">Social Pinterest</span>
                     </p>
                 </div>
-    </div>
+    </SocialMedia>
     );
 }
 

@@ -1,38 +1,39 @@
 import React from 'react';
-import { SocialMedia } from "./style";
+import { SectionSocialMedia, Social, Icon, SocialDesc, Span, SpanInfo } from "./style";
 
-const SocialMedia = () => {
-    return (
-        <SocialMedia>
-            
-                <div className="social face">
-                    <i className="icon fa fa-facebook fa-lg"></i>
-                    <p>
-                        <span className="info1">Suivez-moi sur </span>
-                        <span className="info2">Social Facebook</span>
-                    </p>
-                </div>
+import axios from "axios";
+
+class SocialMedia extends React.Component {
+    
+    state = {
+        social: []
+    };
+    componentDidMount() {
+        axios.get('js/data.json').then(res=>{this.setState({social:res.data.social})})
+    };
+
+    render() {
+        const { social } = this.state;
+        const socialList = social.map((socialItem) => {
+            return (
+             
                 
-                <div className="social twitter">
-                    <i className="icon fa fa-twitter fa-lg"></i>
-                    <p>
-                        <span className="info1">Suivez-moi sur </span>
-                        <span className="info2">Social twitter</span>
-                    </p>
-                </div>
+                    <Social item={socialItem.id} key={socialItem.id}>
+                        <Icon className={socialItem.icon}></Icon>
+                        <SocialDesc>
+                            <Span>{socialItem.title}</Span>
+                            <SpanInfo>{socialItem.body}</SpanInfo>
+                        </SocialDesc>
+                    </Social>
+                   
                 
-                <div className="social pin">
-                    <i className="icon fa fa-pinterest fa-lg"></i>
-                    <p>
-                        <span className="info1">Épinglez-moi </span>
-                        <span className="info2">Social Pinterest</span>
-                    </p>
-                </div>
-    </SocialMedia>
-    );
+            );
+        })
+        return (
+            <SectionSocialMedia>
+            {socialList}
+            </SectionSocialMedia>
+        );
+    }
 }
-
-
-
-
 export default SocialMedia;

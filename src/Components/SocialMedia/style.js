@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SocialMedia = styled.div`
+export const SectionSocialMedia = styled.div`
     height: auto;
     overflow: hidden;
 `;
@@ -10,14 +10,14 @@ export const Social = styled.div`
     float: left;
     box-sizing: border-box;
     padding: 100px 0 100px 60px;
-    background=${props => props.item === 1 ? "#3b5998" : ""};
-    background=${props => props.item === 2 ? "#498cbf" : ""};
-    background=${props => props.item === 3 ? "#cc2127" : ""};
+    background: ${props => props.item === 1 ? "#3b5998" : ""};
+    background: ${props => props.item === 2 ? "#498cbf" : ""};
+    background: ${props => props.item === 3 ? "#cc2127" : ""};
 `; 
 
 
 
-.social-media .social .icon {
+export const Icon = styled.i`
     width: 50px;
     height: 50px;
     background: #fff;
@@ -25,21 +25,21 @@ export const Social = styled.div`
     line-height: 50px;
     color: #888;
     float: left;
-    margin-right: 10px
-}
+    margin-right: 10px;
+`;
 
-.social-media .social p {
+export const SocialDesc = styled.p` 
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
-    color: #fff
-}
+    color: #fff;
+`;
 
-.social-media .social p span {
+export const Span = styled.span` 
     display: block;
-    margin-bottom: 8px
-}
+    margin-bottom: 8px;
+`;
 
-.social-media .social p span.info2 {
-    font-weight: normal
-}
+export const SpanInfo = styled.span` 
+    font - weight: normal;
+`;

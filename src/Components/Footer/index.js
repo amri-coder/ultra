@@ -1,11 +1,13 @@
 import React from 'react';
 
+import { FooterSection, FooterP } from "./style";
 
 const Footer = () => {
     return (
-        <div>
-            Footer
-        </div>
+        <FooterSection>
+            <FooterP> Copyright &copy; 2020 par AMRI </FooterP>
+        </FooterSection>
+        
     );
 }
 
